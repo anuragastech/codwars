@@ -132,10 +132,28 @@ function addBinary(a,b) {
   return (a + b).toString(2);
 }
 // -------------------------------
+// qatons
+// Your function takes two arguments:
+
+//     current father's age (years)
+//     current age of his son (years)
+
+// Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old). The answer is always greater or equal to 0, no matter if it was in the past or it is in the future.
+
+// answer
 
 
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  if (dadYearsOld < 0 || sonYearsOld < 0 || isNaN(dadYearsOld) || isNaN(sonYearsOld)) {
+      return "Please provide valid positive ages.";
+  }
 
+  let ageDifference = dadYearsOld - 2 * sonYearsOld;
 
+  let result = Math.abs(ageDifference);
+
+  return result;
+}
 
 
 
