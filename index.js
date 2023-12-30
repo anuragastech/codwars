@@ -211,6 +211,26 @@ function binToDec(bin){
   return parseInt(bin,2);
 }
 
+
+qstion 
+// Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+// Examples
+
+// "This is an example!" ==> "sihT si na !elpmaxe"
+// "double  spaces"      ==> "elbuod  secaps"
+
+
+
+answer
+
+function reverseWords(str) {
+  return str.split(' ').map(function(word){
+    return word.split('').reverse().join('');
+  }).join(' ');
+}
+
+
+
 // Start the server
 const port = process.env.PORT || 3012;
 app.listen(port, () => {
