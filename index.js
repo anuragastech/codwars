@@ -127,7 +127,7 @@ function smallEnough(a, limit) {
 
 // 1, 1 --> "10" (1 + 1 = 2 in decimal or 10 in binary)
 // 5, 9 --> "1110" (5 + 9 = 14 in decimal or 1110 in binary)
-// answer
+answer
 function addBinary(a,b) {
   return (a + b).toString(2);
 }
@@ -156,7 +156,7 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 }
 
 
-// qstions 
+qstions 
 
 // Write a function that returns a string in which firstname is swapped with last name.
 
@@ -202,6 +202,14 @@ function nameShuffler(str) {
 
 
 
+qstion 
+// Complete the function which converts a binary number (given as a string) to a decimal number.
+
+
+answer
+function binToDec(bin){
+  return parseInt(bin,2);
+}
 
 // Start the server
 const port = process.env.PORT || 3012;
