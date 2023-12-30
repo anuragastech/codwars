@@ -156,6 +156,51 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 }
 
 
+// qstions 
+
+// Write a function that returns a string in which firstname is swapped with last name.
+
+// Example(Input --> Output)
+
+// "john McClane" --> "McClane john"
+
+
+// answers 
+(1)
+function nameShuffler(str){
+  //Shuffle It
+  let char=str.split('')
+  for(let i=1;i<=char.length;i+=2){
+    if(str.length>=2){
+let temp=char[i-1]
+char[i-1]=temp;
+    }
+    x=char.join('')
+    return x;
+  }
+}
+(2)
+function nameShuffler(str) {
+  const words = str.split(' ');
+
+  if (words.length >= 2) {
+    const swappedNames = [words[words.length - 1], ...words.slice(1, words.length - 1), words[0]];
+
+    const swappedString = swappedNames.join(' ');
+
+    return swappedString;
+  } else {
+    return str;
+  }
+}
+(3)
+function nameShuffler(str) {
+  const names = str.split(' ');
+
+  return names.length >= 2 ? names[1] + ' ' + names[0] : str;
+}
+
+
 
 
 // Start the server
