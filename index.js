@@ -230,6 +230,36 @@ function reverseWords(str) {
 }
 
 
+question 
+// Numbers ending with zeros are boring.
+
+// They might be fun in your world, but not here.
+
+// Get rid of them. Only the ending ones.
+
+// 1450 -> 145
+// 960000 -> 96
+// 1050 -> 105
+// -1050 -> -105
+
+// Zero alone is fine, don't worry about it. Poor guy anyway
+answer
+function noBoringZeros(n) {
+  let x = n.toString();
+
+  if (x === '0') {
+    return 0;
+  }
+
+  for (let i = x.length - 1; i >= 0; i--) {
+    if (x[i] !== '0') {
+      return parseInt(x.substring(0, i + 1));
+    }
+  }
+}
+
+question
+
 
 // Start the server
 const port = process.env.PORT || 3012;
