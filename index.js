@@ -317,7 +317,24 @@ function distinct(a) {
 // console.log(removeDuplicates(a));
 
 
+question
 
+// Given a list of digits, return the smallest number that could be formed from these digits, using the digits only once (ignore duplicates).
+// Notes:
+
+// Only positive integers will be passed to the function (> 0 ), no negatives or zeros.'
+
+answer
+function minValue(values){
+  //your code here
+    const x = [...new Set(values)];
+
+    const y = x.sort((a, b) => a - b);
+
+    const result = parseInt(y.join(''));
+
+    return result;
+}
 
 
 // Start the server
