@@ -385,7 +385,23 @@ Math.abs(a.reduce((acc, val) =>
  acc * val, 1) - b.reduce((acc, val) => acc * val, 1));
 
  question 
- 
+//  Write a function to split a string and convert it into an array of words.
+// Examples (Input ==> Output):
+
+// "Robin Singh" ==> ["Robin", "Singh"]
+
+// "I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"]
+
+answer
+function stringToArray(string){
+
+	// code code code
+
+    const x = string.split(' ');
+
+    return x;
+}
+
 
 
 // Start the server
