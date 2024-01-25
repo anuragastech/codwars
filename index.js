@@ -922,6 +922,99 @@ function cockroachSpeed(s) {
 
 
 
+question 
+
+// Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
+
+// (In this case, all triangles must have surface greater than 0 to be accepted).
+
+// Examples:
+
+// Input -> Output
+// 1,2,2 -> true
+// 4,2,3 -> true
+// 2,2,2 -> true
+// 1,2,3 -> false
+// -5,1,3 -> false
+// 0,2,3 -> false
+// 1,2,9 -> false 
+
+
+Answer 
+function isTriangle(a, b, c) {
+  // Check if all sides are positive
+  if (a > 0 && b > 0 && c > 0) {
+      // Check if the sum of any two sides is greater than the third side
+      if (a + b > c && b + c > a && c + a > b) {
+          return true;
+      }
+  }
+  return false;
+}
+
+question 
+// Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
+// Examples
+
+// Input: [1, 5.2, 4, 0, -1]
+// Output: 9.2
+
+// Input: []
+// Output: 0
+
+// Input: [-2.398]
+// Output: -2.398
+// Assumptions
+
+//     You can assume that you are only given numbers.
+//     You cannot assume the size of the array.
+//     You can assume that you do get an array and if the array is empty, return 0.
+
+
+
+answer
+function sumArray(numbers) {
+  if (numbers.length === 0) {
+      return 0;
+  }
+
+  // Using the reduce function to sum the numbers in the array
+  const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+  return sum;
+}
+
+question 
+// In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example: 5! = 5 * 4 * 3 * 2 * 1 = 120. By convention the value of 0! is 1.
+
+// Write a function to calculate factorial for a given input. If input is below 0 or above 12 throw an exception of type ArgumentOutOfRangeException (C#) or IllegalArgumentException (Java) or RangeException (PHP) or throw a RangeError (JavaScript) or ValueError (Python) or return -1 (C).
+
+// More details about factorial can be found here.
+
+
+Answer
+function factorial(n)
+{
+  
+    if (n < 0 || n > 12) {
+        throw new RangeError("Input must be between 0 and 12, inclusive");
+    }
+
+    if (n === 0) {
+        return 1; 
+    }
+
+    let result = 1;
+    for (let i = 1; i <= n; i++) {
+        result *= i;
+    }
+
+    return result;
+}
+
+
+
+
 
 
 
