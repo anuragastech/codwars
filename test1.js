@@ -19,3 +19,16 @@
 // }
 // var j=a.map(test);
 // console.log(j);
+
+
+function arrayDiff(a, b) {
+
+    x=[]
+   
+   
+   for (let i=1;i<=b.length;i++){
+     x.push(a[i]-b[i])
+     return x;
+   }
+ }
+ 
